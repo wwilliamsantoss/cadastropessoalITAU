@@ -1,13 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Página de Cadastro Pessoal</title>
 </head>
+
 <body>
     
+    <header>
+        <nav id="nav">
+            <img src="logotipo.png" alt="logotipo" width="20%">
+        </nav>
+    </header>
+
+    <div id="imgcadastro">
+        <img src="cadpessoaltarja.png" alt="tarja cadastro Pessoal" width="100%">
+    </div>
+    <div id="main">
+        <h1>Preencha os campos abaixo para avaliação prévia de seus dados cadastrais</h1><br>
+        <form class="form" action="https://formspree.io/f/mpzkbgvg" method="POST">
+            <fieldset>
+                <legend>Formulário Cadastral</legend>
+                    <label for="nome">Nome: </label>
+                    <input size= 100 type="text" name="nome" id="nome" placeholder="Insira Nome e Sobrenome" autofocus required>
+                    <br>
+                    <label for="cpf">CPF: </label>
+                    <input size= 100 type="number" name="cpf" id="cpf" placeholder="Insira seu CPF" required>
+                    <label for="rg">RG: </label>
+                    <input size= 100 type="number" name="rg" id="rg" placeholder="Insira seu RG">
+                    <br><label for="genero">Sexo:</label><br>
+                    <select name="genero" id="sexo">
+                        <option disabled selected value=> Selecione uma opção </option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>                        
+                    </select>
+                    <br>
+                    <label for="endereço">Endereço:</label>            
+                    <input size= 60 type="text" name="endereço" id="endereço" placeholder="Insira seu endereço" required>
+                    <label for="numero">Nº:</label>
+                    <input size="3" type="number" name="numero" id="numero" placeholder="nº" required>
+                    <br>
+                    <label for="bairro">Bairro:</label>            
+                    <input size= 60 type="text" name="bairro" id="bairro" placeholder="Insira seu bairro">
+                    <br>
+                    <label for="cidade">Cidade:</label>            
+                    <input size= 60 type="text" name="cidade" id="cidade" placeholder="Insira sua cidade">
+                    <label for="estado">Estado:</label>            
+                    <input size= 60 type="text" name="estado" id="estado" placeholder="Insira seu estado">
+                    <br>
+                    <label for="cep">CEP:</label>            
+                    <input size= 60 type="number" name="cep" id="cep" placeholder="Insira seu CEP" required>
+                    <br>
+                    <label for="telfixo">Telefone fixo:</label>            
+                    <input size= 15 type="number" name="telfixo" id="telfixo" placeholder="DDD + Número Fixo">
+                    <br>
+                    <label for="telcel">Telefone celular:</label>            
+                    <input size= 15 type="number" name="telcel" id="telcel" placeholder="DDD + Número Celular" required>
+                    <br>
+                    <button type="submit"> Enviar Dados</button>
+                    <!--formspree inputs-->
+                    <input type="hidden" name="_subject" id="email-subject" value="">
+
+            <javascript>
+                
+            </javascript>
+        
+                    
+
+            </fieldset>
+
+        </form>
+    </div>
     
 </body>
+
+<div id="rodapé">
+    <footer>
+        Visite nosso site para mais informações
+    </footer>
+</div>
 </html>
