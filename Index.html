@@ -12,7 +12,7 @@
     
     <header>
         <nav id="nav">
-            <img src="logotipo.png" alt="logotipo" width="20%">
+            <img src="logotipo.png" alt="logotipo" width="23%">
         </nav>
     </header>
 
@@ -21,15 +21,17 @@
     </div>
     <div id="main">
         <h1>Preencha os campos abaixo para avaliação prévia de seus dados cadastrais</h1><br>
-        <form class="form" action="https://formspree.io/f/mpzkbgvg" method="POST">
+        <form class="card">
+            <!--form class="form" action="https://formspree.io/f/mpzkbgvg" method="POST"></form-->
             <fieldset>
-                <legend>Formulário Cadastral</legend>
-                    <label for="nome">Nome: </label>
+                <legend id="formulário">Formulário Cadastral</legend>
+                    <!--Início dos campos para preenchimento dos dados cadastrais-->
+                    <label for="nome">Nome: </label><br>
                     <input size= 100 type="text" name="nome" id="nome" placeholder="Insira Nome e Sobrenome" autofocus required>
                     <br>
-                    <label for="cpf">CPF: </label>
-                    <input size= 100 type="number" name="cpf" id="cpf" placeholder="Insira seu CPF" required>
-                    <label for="rg">RG: </label>
+                    <label for="cpf">CPF: </label><br>
+                    <input size= 100 type="number" name="cpf" id="cpf" placeholder="Insira seu CPF" required><br>
+                    <label for="rg">RG: </label><br>
                     <input size= 100 type="number" name="rg" id="rg" placeholder="Insira seu RG">
                     <br><label for="genero">Sexo:</label><br>
                     <select name="genero" id="sexo">
@@ -37,49 +39,52 @@
                         <option value="masc">Masculino</option>
                         <option value="fem">Feminino</option>                        
                     </select>
-                    <br>
-                    <label for="endereço">Endereço:</label>            
-                    <input size= 60 type="text" name="endereço" id="endereço" placeholder="Insira seu endereço" required>
-                    <label for="numero">Nº:</label>
+                    <br><br>
+                    <label for="endereço">Endereço:</label><br>            
+                    <input size= 60 type="text" name="endereço" id="endereço" placeholder="Insira seu endereço" required><br>
+                    <label for="numero">Nº:</label> <br>
                     <input size="3" type="number" name="numero" id="numero" placeholder="nº" required>
                     <br>
-                    <label for="bairro">Bairro:</label>            
+                    <label for="bairro">Bairro:</label><br>         
                     <input size= 60 type="text" name="bairro" id="bairro" placeholder="Insira seu bairro">
                     <br>
-                    <label for="cidade">Cidade:</label>            
+                    <label for="cidade">Cidade:</label><br>            
                     <input size= 60 type="text" name="cidade" id="cidade" placeholder="Insira sua cidade">
-                    <label for="estado">Estado:</label>            
+                    <br>
+                    <label for="estado">Estado:</label><br>        
                     <input size= 60 type="text" name="estado" id="estado" placeholder="Insira seu estado">
                     <br>
-                    <label for="cep">CEP:</label>            
+                    <label for="cep">CEP:</label><br>   
                     <input size= 60 type="number" name="cep" id="cep" placeholder="Insira seu CEP" required>
                     <br>
-                    <label for="telfixo">Telefone fixo:</label>            
+                    <label for="telfixo">Telefone fixo:</label><br>          
                     <input size= 15 type="number" name="telfixo" id="telfixo" placeholder="DDD + Número Fixo">
                     <br>
-                    <label for="telcel">Telefone celular:</label>            
+                    <label for="telcel">Telefone celular:</label><br>          
                     <input size= 15 type="number" name="telcel" id="telcel" placeholder="DDD + Número Celular" required>
-                    <br>
-                    <button type="submit"> Enviar Dados</button>
+                    <br><br>
+                    <!--botão de envio dos inputs-->        
+                    <button id="botão" type="submit" onClick="alert('Dados enviados com sucesso')"> Enviar Dados</button>
                     <!--formspree inputs-->
-                    <input type="hidden" name="_subject" id="email-subject" value="">
+                    <!--input type="hidden" name="_subject" id="email-subject" value=""-->
+                           
 
-            <javascript>
-                
-            </javascript>
-        
-                    
+            </fieldset>  
 
-            </fieldset>
+            <!--script src="alertbox.js">***evento para puxar function alertbox, sem sucesso
+            </script-->
+                  
 
         </form>
     </div>
     
 </body>
+<br><br><br>
 
 <div id="rodapé">
     <footer>
-        Visite nosso site para mais informações
+        <br><br>
+        <a href="Index.html" id="volte">Volte ao topo</a>
     </footer>
 </div>
 </html>

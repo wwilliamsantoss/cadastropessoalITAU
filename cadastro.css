@@ -1,5 +1,6 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(250, 250, 250);
 
 }
 
@@ -16,7 +17,69 @@ h1{
     text-align: center;
     font-weight: lighter;
 }
-footer{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#formulário{
+    font-weight: bold;
+}
+
+form{
+    width: 65%;
+    align-content: center;
+    margin: 0 auto;
+
+}
+
+label{
+    font-weight: bold;
+    padding-bottom: 6px;
+
     
 }
+
+input{
+    width: 97%;
+    height: 25px;
+    margin-bottom: 1em;
+    font: 1em verdana;
+}
+
+#cpf {
+    width: 20%;
+    }
+
+#rg {
+width: 20%;
+}
+#numero {
+    width: 9%;
+    }
+#sexo{
+    font-size: 17px;
+}
+#telfixo {
+    width: 20%;
+    }
+#telcel {
+    width: 20%;
+    }
+
+#botão{
+ font-size: 100%;
+ font-weight: bold;
+}
+#rodapé{
+    text-align: center;
+    padding-bottom: auto;
+    height: 100px;
+    background-color:#004247;
+    background-color:  ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+#volte{
+    text-align: center;
+    color: white;
+
+}
+
